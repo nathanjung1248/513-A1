@@ -39,58 +39,57 @@ h1, h2 {
 /* Features Section */
 .features-section {
     padding: 40px;
-    background-color: #c5a9a1; /* Matching the background color */
-    display: flex;
-    justify-content: center;
-}
-
-.features-container {
-    display: flex;
-    gap: 20px;
-    max-width: 90%;
-}
-
-.feature {
-    flex: 1;
-    padding: 20px;
-    border-radius: 15px; /* Rounded corners */
-    background-color: #a18981; /* Section background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.feature h2 {
-    font-size: 1.5em;
-    color: #fff; /* White text for headings */
-}
-
-.feature p {
-    font-size: 1em;
-    color: #e6e6e6;
-}
-
-.feature-list {
+    background-color: #f4f4f4;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
 }
 
-.feature-item {
-    background-color: #ddd;
-    padding: 10px 15px;
+.top-reasons, .our-products {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
     border-radius: 10px;
-    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
+.top-reasons {
+    background-color: #f0f8ff; /* Light blue */
+}
+
+.our-products {
+    background-color: #f5f5f5; /* Light grey */
+}
+
+.top-reasons:hover, .our-products:hover {
+    transform: translateY(-5px);
+}
+
+.cta-button {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Layout */
 @media (max-width: 768px) {
-    .features-container {
-        flex-direction: column; /* Stack sections vertically on small screens */
+    .features-section {
+        flex-direction: column; /* Stacks them vertically on small screens */
     }
 }
-
 
 /* About Section */
 .about-section {

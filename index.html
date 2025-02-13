@@ -10,7 +10,9 @@
 <body>
     <header class="hero-section">
         <div class="logo-container">
-            <img src="images/logo.svg" alt="Company Logo" class="logo">
+            <svg class="logo">
+                <use href="./images/logo.svg#logo"></use>
+            </svg>
         </div>
         <h1>Welcome to Our Application</h1>
     </header>
@@ -19,22 +21,22 @@
         <div class="features-container">
             <article class="feature">
                 <h2>Why Choose Us?</h2>
-                <ul>
-                    <li>Quality Assurance</li>
-                    <li>24/7 Customer Support</li>
-                    <li>Affordable Pricing</li>
-                    <li>Expert Team</li>
-                    <li>Fast Delivery</li>
-                </ul>
+                <div class="feature-content">
+                    <div class="feature-item">✔ Quality Assurance</div>
+                    <div class="feature-item">✔ 24/7 Customer Support</div>
+                    <div class="feature-item">✔ Affordable Pricing</div>
+                    <div class="feature-item">✔ Expert Team</div>
+                    <div class="feature-item">✔ Fast Delivery</div>
+                </div>
             </article>
             <article class="feature">
                 <h2>Our Products</h2>
-                <ul>
-                    <li>Advanced Technology</li>
-                    <li>100% Reliable</li>
-                    <li>Cost-effective</li>
-                    <li>User-friendly</li>
-                </ul>
+                <div class="feature-content">
+                    <div class="feature-item">✔ Advanced Technology</div>
+                    <div class="feature-item">✔ 100% Reliable</div>
+                    <div class="feature-item">✔ Cost-effective</div>
+                    <div class="feature-item">✔ User-friendly</div>
+                </div>
                 <button class="cta-button">Shop Now</button>
             </article>
         </div>

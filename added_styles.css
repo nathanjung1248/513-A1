@@ -113,5 +113,5 @@ h1, h2 {
 }
 
 .cta-section h2 {
-    color: white;
+    color: white !important;
 }

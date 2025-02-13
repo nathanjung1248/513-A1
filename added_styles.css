@@ -113,3 +113,7 @@ h1, h2 {
     background-color: #333;
     color: white;
 }
+
+.cta-section h2 {
+    color: white;
+}

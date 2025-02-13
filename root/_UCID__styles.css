@@ -1,0 +1,90 @@
+/* Custom Stylesheet: <UCID>_styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Header Styling */
+.hero-section {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Features Section */
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.cta-button {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #e0e0e0;
+}
+
+.company-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+.cta-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    color: white;
+}

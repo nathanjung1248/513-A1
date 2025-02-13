@@ -46,22 +46,22 @@ h1, h2 {
 }
 
 .features-container {
-    display: flex;
-    gap: 20px;
-    max-width: 80%; /* Ensures it's centered */
-    justify-content: center; /* Centers the child elements */
-    align-items: stretch;
+    display: flex; /* Enables flexbox */
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    justify-content: space-between; /* Spaces them evenly */
+    align-items: stretch; /* Ensures they have the same height */
+    gap: 20px; /* Adds space between them */
+    padding: 20px;
 }
 
 .feature {
-    flex: 1;
-    min-width: 300px;
+    flex: 1; /* Allows equal width */
+    min-width: 300px; /* Ensures responsiveness */
     padding: 20px;
-    border-radius: 15px;
-    background-color: #f5f5f5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .top-reasons, .our-products {
     flex: 1;

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Landing Page</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="./styles.css"> <!-- Default styles -->
-    <link rel="stylesheet" href="./<UCID>_styles.css"> <!-- Custom styles -->
+    <link rel="stylesheet" href="./UCID_styles.css"> <!-- Custom styles -->
 </head>
 <body>
     <header class="hero-section">
@@ -18,15 +18,28 @@
     </header>
 
     <section class="features-section">
-        <article class="feature">
-            <h2>Top 5 Reasons to Choose Us</h2>
-            <p>1. Quality Assurance<br>2. 24/7 Support<br>3. Affordable Pricing<br>4. Expert Team<br>5. Fast Delivery</p>
-        </article>
-        <article class="feature">
-            <h2>Our Products</h2>
-            <p>&#x2022; Advanced Technology<br>&#x2022; 100% Reliable<br>&#x2022; Cost-effective<br>&#x2022; User-friendly</p>
-            <button class="cta-button">Shop Now!</button>
-        </article>
+        <div class="features-container">
+            <article class="feature">
+                <h2>Top 5 Reasons to Choose Us</h2>
+                <div class="feature-list">
+                    <div class="feature-item"><span class="icon">✔</span> <span class="text">Quality Assurance</span></div>
+                    <div class="feature-item"><span class="icon">✔</span> <span class="text">24/7 Customer Support</span></div>
+                    <div class="feature-item"><span class="icon">✔</span> <span class="text">Affordable Pricing</span></div>
+                    <div class="feature-item"><span class="icon">✔</span> <span class="text">Expert Team</span></div>
+                    <div class="feature-item"><span class="icon">✔</span> <span class="text">Fast Delivery</span></div>
+                </div>
+            </article>
+            <article class="feature">
+                <h2>Our Products</h2>
+                <div class="feature-list">
+                    <div class="feature-item"><span class="icon">⭐</span> <span class="text">Advanced Technology</span></div>
+                    <div class="feature-item"><span class="icon">⭐</span> <span class="text">100% Reliable</span></div>
+                    <div class="feature-item"><span class="icon">⭐</span> <span class="text">Cost-effective</span></div>
+                    <div class="feature-item"><span class="icon">⭐</span> <span class="text">User-friendly</span></div>
+                </div>
+                <button class="cta-button">🚀 Shop Now!</button>
+            </article>
+        </div>
     </section>
 
     <section class="about-section">
@@ -38,7 +51,7 @@
     <footer class="cta-section">
         <h2>Contact Us</h2>
         <p>Get in touch for more information.</p>
-        <button class="cta-button">Contact Us</button>
+        <button class="cta-button">📞 Contact Us</button>
     </footer>
 </body>
 </html>

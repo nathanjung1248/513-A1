@@ -38,13 +38,29 @@ h1, h2 {
 
 /* Features Section */
 .features-section {
+    display: flex;
+    justify-content: center; /* Center the features container */
+    align-items: center; /* Align items properly */
     padding: 40px;
     background-color: #f4f4f4;
+}
+
+.features-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
     gap: 20px;
+    max-width: 80%; /* Ensures it's centered */
+    justify-content: center; /* Centers the child elements */
+    align-items: stretch;
+}
+
+.feature {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .top-reasons, .our-products {

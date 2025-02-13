@@ -40,34 +40,32 @@ h1, h2 {
 .features-section {
     padding: 40px;
     background-color: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
 }
 
-.features-container {
-    display: flex; /* Enables flexbox */
-    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
-    justify-content: space-between; /* Spaces them evenly */
-    align-items: stretch; /* Ensures they have the same height */
-    gap: 20px; /* Adds space between them */
-    padding: 20px;
-}
-
-.feature {
-    flex: 1; /* Allows equal width */
-    min-width: 300px; /* Ensures responsiveness */
+.top-reasons, .our-products {
+    flex: 1;
+    min-width: 300px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color: #f0f8ff; /* Light blue background for contrast */
 }
 
-.feature:hover {
-    transform: translateY(-5px);
+.top-reasons {
+    background-color: #f0f8ff; /* Light blue */
 }
 
-/* Ensure different background color for Our Products */
 .our-products {
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Light grey */
+}
+
+.top-reasons:hover, .our-products:hover {
+    transform: translateY(-5px);
 }
 
 .cta-button {
@@ -88,7 +86,7 @@ h1, h2 {
 
 /* Responsive Layout */
 @media (max-width: 768px) {
-    .features-container {
+    .features-section {
         flex-direction: column; /* Stacks them vertically on small screens */
     }
 }
